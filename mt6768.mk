@@ -73,6 +73,15 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster4_1support.vendor \
+    libkeymaster41.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.hardware_keystore.km41.xml
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \

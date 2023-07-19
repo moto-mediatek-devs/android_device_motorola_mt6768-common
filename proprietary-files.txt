@@ -127,6 +127,19 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 
+# Keymaster
+vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
+vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib/libdecrypt.so
+vendor/lib/libthha.so
+vendor/lib64/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib64/hw/kmsetkey.default.so
+vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib64/libdecrypt.so
+vendor/lib64/libkmsetkey.so
+vendor/lib64/libthha.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+
 # Trusted Execution Environment (TEE)
 vendor/app/mcRegistry/020b0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin
