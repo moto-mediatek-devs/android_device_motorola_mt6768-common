@@ -154,11 +154,6 @@
         <fqname>@1.1::IAee/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.apmonitor</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IApmService/apm_hidl_service</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAtcid/default</fqname>
@@ -189,11 +184,6 @@
         <fqname>@1.0::IComposerExt/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.dmc</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::IDmcService/dmc_hidl_service</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.face</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IExtBiometricsFace/default</fqname>
@@ -211,11 +201,6 @@
         <fqname>@1.0::ILog/LoggerHidlServer</fqname>
         <fqname>@1.0::ILog/MobileLogHidlServer</fqname>
         <fqname>@1.0::ILog/ModemLogHidlServer</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.mdmonitor</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IMDMonitorService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mmagent</name>
