@@ -80,6 +80,9 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/$(PRODUCT_DEVICE).config
 
+TARGET_KERNEL_DTB := \
+    mediatek/mt6768.dtb
+
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Partitions
