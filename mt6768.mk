@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit generic_ramdisk product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
