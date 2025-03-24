@@ -5,6 +5,24 @@
 
 COMMON_PATH := device/motorola/mt6768-common
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vendor_dlkm \
+    odm \
+    odm_dlkm \
+    boot \
+    vendor_boot \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    dtbo
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
