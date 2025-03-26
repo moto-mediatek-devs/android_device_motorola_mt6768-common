@@ -23,6 +23,16 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/motorola/mt6768
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    vendor/$(PRODUCT_DEVICE).config
+
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 BOARD_HAS_MTK_HARDWARE := true
