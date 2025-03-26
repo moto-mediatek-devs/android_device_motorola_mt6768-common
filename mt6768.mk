@@ -48,6 +48,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6768 \
+    fstab.mt6768.vendor_ramdisk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
