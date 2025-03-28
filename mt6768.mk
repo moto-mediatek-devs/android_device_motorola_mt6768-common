@@ -141,5 +141,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek
+
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/motorola/mt6768-common/mt6768-common-vendor.mk)
