@@ -332,4 +332,4 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product-if-exists, vendor/motorola/mt6768-common/mt6768-common-vendor.mk)
+$(call inherit-product, vendor/motorola/mt6768-common/mt6768-common-vendor.mk)
