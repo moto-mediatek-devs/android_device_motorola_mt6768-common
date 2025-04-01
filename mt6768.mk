@@ -49,8 +49,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:32 \
-    android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.audio.service.mediatek:32
+    android.hardware.audio.effect@7.0-impl:32
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:32 \
@@ -275,7 +274,6 @@ PRODUCT_PACKAGES += \
     init.mt6768.usb.rc \
     init.mtkgki.rc \
     init.sensor_1_0.rc \
-    init.recovery.mt6768.rc \
     ueventd.mt6768.rc
 
 PRODUCT_COPY_FILES += \

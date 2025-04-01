@@ -27,6 +27,7 @@ vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libcvsd_mtk.so
 vendor/lib/libladder.so
+vendor/lib64/libladder.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
@@ -35,6 +36,8 @@ vendor/lib/librt_extamp_intf.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 
 # Audio configs
 vendor/etc/audio_param/AudioParamOptions.xml
@@ -187,6 +190,7 @@ vendor/lib64/libcam.hal3a.cctsvr.so
 vendor/lib64/libcam.hal3a.log.so
 vendor/lib64/libcam.hal3a.v3.dng.so
 vendor/lib64/libcam.hal3a.v3.so
+vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/libcam.hal3a.v3.nvram.so
 vendor/lib64/libcam.hal3a.v3.lsctbl.so
 vendor/lib64/libcam.halisp.so
@@ -197,6 +201,11 @@ vendor/lib64/libcam.lcs.so
 vendor/lib64/libcam.pdtblgen.so
 vendor/lib64/libcam.utils.sensorprovider.so
 vendor/lib64/libcam.vhdr.so
+vendor/lib64/libcamalgo.abf.so
+vendor/lib64/libfeature.vsdof.hal.so
+vendor/lib64/libcamalgo.n3d.so
+vendor/lib64/libcamalgo.vsf.so
+vendor/lib64/libmtkcam_dpe.so
 vendor/lib64/libcamalgo.3dnr.so
 vendor/lib64/libcamalgo.dngop.so
 vendor/lib64/libcamalgo.eis.so
@@ -240,8 +249,22 @@ vendor/lib64/libmtkcam.featurepipe.streaming.so
 vendor/lib64/libmtkcam.featurepipe.vsdof_util.so
 vendor/lib64/libmtkcam.logicalmodule.so
 vendor/lib64/libmtkcam_3rdparty.core.so
+vendor/lib64/libmtkcam.featurepipe.depthmap.so
+vendor/lib64/libBstUndistort_impl.so
+vendor/lib64/libBSTSWAD.so
+vendor/lib64/libBSTbase_share.so
+vendor/lib64/libportrait_repair_ppl3_ocl.so
+vendor/lib64/libcam.ArcCamEngine.so
+vendor/lib64/libarcsoft_dualcam_refocus_image.so
+vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libmtkcam_3rdparty.customer.so
 vendor/lib64/libmtkcam_3rdparty.mtk.so
+vendor/lib64/libabfadp.so
+vendor/lib64/libFNVfbEngineHAL.so
+vendor/lib64/libfn.vsfb.so
+vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_scbokeh_video.so
+vendor/lib64/libmtkcam.plugin.tp_scbokeh_preview.so
 vendor/lib64/libmtkcam_3rdparty.so
 vendor/lib64/libmtkcam_calibration_convertor.so
 vendor/lib64/libmtkcam_calibration_provider.so
@@ -519,7 +542,6 @@ vendor/lib64/libwvhidl.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/hw/bix.fingerprint.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
@@ -569,14 +591,14 @@ vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
 
 # IMS
-system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar;BOOT_JAR
-system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar;BOOT_JAR
-system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar;BOOT_JAR
-system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar;BOOT_JAR
-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar;BOOT_JAR
-system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar;BOOT_JAR
-system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar;BOOT_JAR
-system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar;BOOT_JAR
+system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
+system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar
+system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar
+system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar
+system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar
+system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar
+system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
+system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
 system_ext/priv-app/ImsService/ImsService.apk
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
@@ -731,6 +753,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/lib/libadpcmdec_mtk.so
+vendor/lib64/libadpcmdec_mtk.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libJpgEncPipe.so
 vendor/lib/libMtkOmxAdpcmDec.so
@@ -749,6 +772,7 @@ vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libmp3dec_mtk.so
+vendor/lib64/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libstagefrighthw.so
@@ -915,11 +939,11 @@ vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/librcs_interface.so
-vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_core_shr.so;DISABLE_CHECKELF
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
@@ -929,6 +953,8 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mt6768.so
 vendor/lib64/libhwm.so
+vendor/lib64/libQstAlgo.so
+vendor/lib64/libmmc5603.so
 vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
 

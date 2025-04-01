@@ -27,8 +27,19 @@ from extract_utils.utils import (
 )
 
 namespace_imports = [
+    'hardware/mediatek',
     'device/motorola/mt6768-common',
 ]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
+    ('libsink',): lib_fixup_remove,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
@@ -58,15 +69,14 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libmnl.so' : blob_fixup()
         .add_needed('libcutils.so'),
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so') : blob_fixup()
-        .add_needed('libbase_shim.so'),
-    'vendor/lib64/hw/hwcomposer.mt6768.so' : blob_fixup()
-        .add_needed('libprocessgroup_shim.so')
+        .add_needed('libbase_shim.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
     'mt6768-common',
     'motorola',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
