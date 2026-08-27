@@ -2,6 +2,7 @@
 audio.deep_buffer.media=true
 ro.config.vc_call_vol_default=6
 ro.config.vc_call_vol_steps=8
+vendor.audio.powerhal.latency.ul=true
 
 # Camera
 camera.disable_zsl_mode=1
