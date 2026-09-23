@@ -46,16 +46,16 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/android.hardware.soundtrigger3-impl.so',
     ): blob_fixup()
         .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
+    'vendor/bin/mnld' : blob_fixup()
+        .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so')
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint-service.rc': blob_fixup()
         .regex_replace('user root', 'user system')
         .regex_replace('group root', 'group system input uhid'),
     'vendor/lib64/android.hardware.audio.core-impl-mediatek.so': blob_fixup()
         .add_needed('libaudioutils_shim.so')
         .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
-    (
-        'vendor/bin/mnld',
-        'vendor/lib64/libaalservice.so',
-    ): blob_fixup()
+    'vendor/lib64/libaalservice.so' : blob_fixup()
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
     (
         'vendor/lib64/libcodec2_mtk_vdec.so',
